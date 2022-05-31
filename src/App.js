@@ -4,6 +4,7 @@ import GlobalStyle from "./globalStyles";
 import Home from "./pages/HomePage/Home";
 import About from "./pages/About/About";
 import Support from "./pages/Support/Support";
+import PasswordReset from "./pages/PasswordReset/PasswordReset";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import { Navbar, Footer } from "./components";
@@ -25,6 +26,10 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/support" component={Support} />
+        <Route
+          path="/dj-rest-auth/password/reset/confirm/:id/:token"
+          component={PasswordReset}
+        />
         <Route path="/privacy-policy" exact component={Privacy} />
       </Switch>
       <Footer />

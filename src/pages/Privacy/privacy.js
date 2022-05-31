@@ -10,7 +10,7 @@ import {
   Heading,
   Subtitle,
   ImgWrapper,
-  Img
+  Img,
 } from "../../components/InfoSection/InfoSection.elements";
 
 function CourseSection({
@@ -26,20 +26,20 @@ function CourseSection({
   img,
   alt,
   imgStart,
-  start
+  start,
 }) {
   return (
     <>
       <InfoSec lightBg={true}>
         <Container>
           <TextWrapper style={{ justifyContent: "center", maxWidth: "70%" }}>
-            <Heading lightText={false}>Privacy Policy - Lakaters</Heading>
+            <Heading lightText={false}>Privacy Policy - Laam Academy</Heading>
             <Subtitle lightTextDesc={lightTextDesc}>
-              Your privacy is important to us. It is Lakaters' policy to respect
-              your privacy and comply with any applicable law and regulation
-              regarding any personal information we may collect about you,
-              including across our website, https://lakaters.in/, and other
-              sites we own and operate. This policy is effective as of 28
+              Your privacy is important to us. It is Laam Academy' policy to
+              respect your privacy and comply with any applicable law and
+              regulation regarding any personal information we may collect about
+              you, including across our website, https://Laam Academy.in/, and
+              other sites we own and operate. This policy is effective as of 28
               November 2021 and was last updated on 28 November 2021.
             </Subtitle>
             <TopLine lightTopLine={lightTopLine}>
@@ -213,7 +213,7 @@ function CourseSection({
               contact us using the following details:
             </Subtitle>
             <Subtitle lightTextDesc={lightTextDesc}>
-              Lakaters <br></br> lakaters.hyd@gmail.com
+              Laam Academy <br></br> support@laamacademy.com
             </Subtitle>
           </TextWrapper>
           {/* </InfoColumn> */}

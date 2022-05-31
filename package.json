@@ -14,7 +14,9 @@
     "react-scripts": "3.4.2",
     "styled-components": "^5.1.1"
   },
-  "homepage": "http://www.lakaters.in",
+  "homepage": "http://www.laamacademy.com/",
+  "proxy": "http://www.laamacademy.com/",
+  "basename": "/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

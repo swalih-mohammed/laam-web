@@ -4,6 +4,7 @@ import { Container, Button } from "../../globalStyles";
 import styled from "styled-components";
 import { MdCall, MdEmail } from "react-icons/md";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import { useParams } from "react-router-dom";
 
 const Section = styled.div`
   color: #fff;
@@ -93,10 +94,16 @@ const Subtitle = styled.p`
   line-height: 24px;
   color: ${"#1c2237"};
 `;
+const test = 123;
+function SectionOne(props) {
+  const { token } = useParams();
 
-function SectionOne() {
+  React.useEffect(() => {
+    console.log(props.match.params.id);
+    console.log("testing from support");
+  }, []);
   return (
-    <Section>
+    <div>
       {/* <Container> */}
       <div
         style={{
@@ -117,10 +124,12 @@ function SectionOne() {
             width: "100px",
           }}
         >
+          <p></p>
           <MdCall size={50} color={"green"} />
           <a style={{ color: "back" }} href="tel:+91 7207724191">
             7207724191
           </a>
+          <p style={{ color: "red" }}>{token ? token : "no id"}</p>
         </div>
         <div
           sytle={{
@@ -153,7 +162,7 @@ function SectionOne() {
           </a>
         </div>
       </div>
-    </Section>
+    </div>
   );
 }
 

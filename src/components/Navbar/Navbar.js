@@ -60,7 +60,11 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <Img src={require("../../images/laam2.png")} alt={""} />
+              <Img
+                style={{ width: "30%" }}
+                src={require("../../images/laam2.png")}
+                alt={""}
+              />
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
